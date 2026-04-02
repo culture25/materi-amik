@@ -282,8 +282,115 @@
                 grid-template-columns: 1fr;
             }
 
+            .summary-box {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
             .summary-left h2 {
                 font-size: 24px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 16px;
+            }
+
+            .topbar {
+                margin-bottom: 18px;
+            }
+
+            .title-box h1 {
+                font-size: 28px;
+                line-height: 1.2;
+            }
+
+            .title-box p {
+                font-size: 14px;
+            }
+
+            .card {
+                padding: 16px;
+                border-radius: 18px;
+            }
+
+            .summary-box {
+                margin-bottom: 16px;
+            }
+
+            .summary-left h2 {
+                font-size: 22px;
+            }
+
+            .summary-badge {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .materi-item {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .materi-info {
+                width: 100%;
+            }
+
+            .materi-title {
+                font-size: 16px;
+            }
+
+            .materi-actions {
+                width: 100%;
+            }
+
+            .materi-actions .btn {
+                flex: 1;
+                min-width: 0;
+            }
+
+            .file-icon {
+                width: 46px;
+                height: 46px;
+                font-size: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 12px;
+            }
+
+            .title-box h1 {
+                font-size: 24px;
+            }
+
+            .section-title {
+                font-size: 18px;
+            }
+
+            .input,
+            .select {
+                padding: 10px 11px;
+                font-size: 14px;
+            }
+
+            .materi-meta {
+                gap: 6px;
+            }
+
+            .badge {
+                font-size: 11px;
+                padding: 5px 8px;
+            }
+
+            .materi-actions {
+                flex-direction: column;
+            }
+
+            .materi-actions .btn {
+                width: 100%;
             }
         }
     </style>
